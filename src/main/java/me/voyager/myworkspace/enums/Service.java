@@ -3,8 +3,8 @@ package me.voyager.myworkspace.enums;
 public enum Service {
 	
 	pCloud("pcloud"),
-	oneDrive("OneDrive"),
-	gDrive("GoogleDrive");
+	oneDrive("onedrive"),
+	gDrive("googledrive");
 	
 	private String name;
 	
@@ -18,6 +18,15 @@ public enum Service {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public static Service stringByInstance(String serviceName) {
+		
+		for (Service service : Service.values() ) { 
+		    if(service.getName().equals(serviceName))return service;
+		}
+		return null;
+		
 	}
 	
 	@Override

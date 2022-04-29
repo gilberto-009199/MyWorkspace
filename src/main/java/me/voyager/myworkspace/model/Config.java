@@ -10,7 +10,6 @@ public class Config {
 	public Plataform plataform;
 	public boolean isSincornized;
 	public boolean isFirstUse = true;
-	public String pathFileConfig;
 	public String pathFileDataBase;
 	public List<String> servicesInUse;
 	
@@ -31,12 +30,6 @@ public class Config {
 	}
 	public void setFirstUse(boolean isFirstUse) {
 		this.isFirstUse = isFirstUse;
-	}
-	public String getPathFileConfig() {
-		return pathFileConfig;
-	}
-	public void setPathFileConfig(String pathFileConfig) {
-		this.pathFileConfig = pathFileConfig;
 	}
 	public String getPathFileDataBase() {
 		return pathFileDataBase;

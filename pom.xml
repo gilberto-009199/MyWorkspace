@@ -13,6 +13,12 @@
 		  <artifactId>jackson-dataformat-properties</artifactId>
 		  <version>2.13.0</version>
 		</dependency>
+		<!-- pCloud Service Dependency -->
+		<dependency>
+		  <groupId>com.pcloud.sdk</groupId>
+		  <artifactId>java-core</artifactId>
+		  <version>1.8.1</version>
+		</dependency>
 	</dependencies>
     <build>
 	    <plugins>
